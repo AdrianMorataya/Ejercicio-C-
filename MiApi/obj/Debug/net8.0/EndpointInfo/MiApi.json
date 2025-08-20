@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MiApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Hola": {
+      "get": {
+        "tags": [
+          "Hola"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}
