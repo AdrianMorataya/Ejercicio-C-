@@ -1,0 +1,652 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MiApiDB",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/CategoriasInsumo": {
+      "get": {
+        "tags": [
+          "CategoriasInsumo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoriaInsumo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoriaInsumo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CategoriaInsumo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Clientes": {
+      "get": {
+        "tags": [
+          "Clientes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Insumos": {
+      "get": {
+        "tags": [
+          "Insumos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insumo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insumo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insumo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Productos": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Producto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Producto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Producto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProductosInsumos": {
+      "get": {
+        "tags": [
+          "ProductosInsumos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductoInsumo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductoInsumo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProductoInsumo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Proveedores": {
+      "get": {
+        "tags": [
+          "Proveedores"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Proveedor"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Proveedor"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Proveedor"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TipoProducto": {
+      "get": {
+        "tags": [
+          "TipoProducto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoProducto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoProducto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TipoProducto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Usuario"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ventas": {
+      "get": {
+        "tags": [
+          "Ventas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Venta"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Venta"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Venta"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CategoriaInsumo": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "categoriaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Cliente": {
+        "required": [
+          "correoContacto",
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "correoContacto": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "zona": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Insumo": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "insumoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoriaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "proveedorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "costo": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Producto": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tipoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "precio": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductoInsumo": {
+        "type": "object",
+        "properties": {
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "insumoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidad": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Proveedor": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "proveedorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "contacto": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoProducto": {
+        "required": [
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "tipoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "required": [
+          "apellido",
+          "correo",
+          "nombre",
+          "passwordHash"
+        ],
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "apellido": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "correo": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "passwordHash": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Venta": {
+        "type": "object",
+        "properties": {
+          "ventaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "metodoPago": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
