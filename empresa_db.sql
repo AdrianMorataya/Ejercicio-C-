@@ -85,3 +85,70 @@ CREATE TABLE productos_insumos (
     FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
     FOREIGN KEY (insumo_id) REFERENCES insumos(insumo_id)
 );
+
+USE empresa_db;
+
+INSERT INTO clientes (nombre, correo_contacto, direccion, zona) VALUES
+('Juan Pérez', 'juan@example.com', 'Zona 1, Ciudad', 1),
+('María López', 'maria@example.com', 'Zona 2, Ciudad', 2),
+('Carlos Gómez', 'carlos@example.com', 'Zona 3, Ciudad', 1),
+('Ana Martínez', 'ana@example.com', 'Zona 4, Ciudad', 3),
+('Luis Fernández', 'luis@example.com', 'Zona 5, Ciudad', 2);
+
+INSERT INTO usuarios (cliente_id, nombre, apellido, correo, password_hash) VALUES
+(1, 'Pedro', 'Sánchez', 'pedro@example.com', 'hash1'),
+(2, 'Lucía', 'Ramírez', 'lucia@example.com', 'hash2'),
+(3, 'Miguel', 'Torres', 'miguel@example.com', 'hash3'),
+(4, 'Sofía', 'Hernández', 'sofia@example.com', 'hash4'),
+(5, 'Jorge', 'Vargas', 'jorge@example.com', 'hash5');
+
+INSERT INTO tipos_producto (nombre) VALUES
+('Bebida'),
+('Snack'),
+('Electrónica');
+
+INSERT INTO productos (tipo_id, nombre, precio) VALUES
+(1, 'Coca-Cola', 1.50),
+(1, 'Agua Mineral', 1.00),
+(2, 'Papas Fritas', 2.00),
+(2, 'Chocolate', 1.80),
+(3, 'Auriculares', 25.00);
+
+INSERT INTO proveedores (nombre, contacto, telefono, direccion) VALUES
+('Proveedor A', 'Carlos', '555-1234', 'Calle 1'),
+('Proveedor B', 'Ana', '555-5678', 'Calle 2'),
+('Proveedor C', 'Luis', '555-9012', 'Calle 3');
+
+INSERT INTO categorias_insumo (nombre) VALUES
+('Bebidas'),
+('Snacks'),
+('Electrónica');
+
+INSERT INTO insumos (categoria_id, proveedor_id, nombre, costo) VALUES
+(1, 1, 'Lata de Coca-Cola', 0.80),
+(1, 1, 'Botella de Agua', 0.50),
+(2, 2, 'Bolsa de Papas', 1.00),
+(2, 2, 'Barra de Chocolate', 0.90),
+(3, 3, 'Auriculares Inalámbricos', 15.00);
+
+INSERT INTO productos_insumos (producto_id, insumo_id, cantidad) VALUES
+(1, 1, 1),
+(2, 2, 1),
+(3, 3, 1),
+(4, 4, 1),
+(5, 5, 1);
+
+INSERT INTO ventas (cliente_id, usuario_id, producto_id, monto, metodo_pago) VALUES
+(1, 1, 1, 1.50, 1),
+(2, 2, 2, 1.00, 2),
+(3, 3, 3, 2.00, 3),
+(4, 4, 4, 1.80, 1),
+(5, 5, 5, 25.00, 2);
+
+INSERT INTO reportes (tipo, descripcion) VALUES
+('Inventario', 'Reporte de stock inicial'),
+('Ventas', 'Reporte de ventas semanales'),
+('Proveedores', 'Reporte de proveedores activos');
+
+SELECT * FROM clientes;
+
