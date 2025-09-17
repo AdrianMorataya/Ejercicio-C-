@@ -27,6 +27,6 @@ namespace MiApiDB.Models
         public decimal Monto { get; set; }
 
         [Column("metodo_pago")]
-        public byte MetodoPago { get; set; } // 1=Efectivo, 2=Tarjeta, 3=Transferencia
+        public byte MetodoPago { get; set; }
     }
 }

@@ -19,7 +19,6 @@ namespace MiApiDB.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Clave primaria compuesta
             modelBuilder.Entity<ProductoInsumo>()
                 .HasKey(pi => new { pi.ProductoId, pi.InsumoId });
         }

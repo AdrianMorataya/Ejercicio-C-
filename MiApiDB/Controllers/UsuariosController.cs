@@ -1,65 +1,67 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using MiApiDB.Data;
+using MiApiDB.Dtos;
 using MiApiDB.Models;
+using MiApiDB.Helpers;
 
 namespace MiApiDB.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class UsuariosController : ControllerBase
     {
         private readonly AppDbContext _context;
-        public UsuariosController(AppDbContext context) => _context = context;
+        private readonly JwtService _jwtService;
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> Get() =>
-            await _context.Usuarios.ToListAsync();
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> Get(int id)
+        public UsuariosController(AppDbContext context, JwtService jwtService)
         {
-            var item = await _context.Usuarios.FindAsync(id);
-            return item == null ? NotFound() : item;
+            _context = context;
+            _jwtService = jwtService;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<Usuario>> Post(Usuario item)
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(RegisterDto dto)
         {
-            _context.Usuarios.Add(item);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(Get), new { id = item.UsuarioId }, item);
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, Usuario item)
-        {
-            if (id != item.UsuarioId) return BadRequest();
-            _context.Entry(item).State = EntityState.Modified;
-
-            try
+            if (_context.Usuarios.Any(u => u.Correo == dto.Correo))
             {
-                await _context.SaveChangesAsync();
-                return NoContent();
+                return BadRequest("El correo ya está en uso.");
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!await _context.Usuarios.AnyAsync(e => e.UsuarioId == id)) return NotFound();
-                throw;
-            }
-        }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var item = await _context.Usuarios.FindAsync(id);
-            if (item == null) return NotFound();
-            _context.Usuarios.Remove(item);
+            string passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+
+            var usuario = new Usuario
+            {
+                ClienteId = dto.ClienteId,
+                Nombre = dto.Nombre,
+                Apellido = dto.Apellido,
+                Correo = dto.Correo,
+                PasswordHash = passwordHash
+            };
+
+            _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
-            return NoContent();
+
+            return Ok(new
+            {
+                usuario.UsuarioId,
+                usuario.Nombre,
+                usuario.Apellido,
+                usuario.Correo
+            });
+        }
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] LoginDto dto)
+        {
+            var usuario = _context.Usuarios.SingleOrDefault(u => u.Correo == dto.Correo);
+
+            if (usuario == null || !BCrypt.Net.BCrypt.Verify(dto.Password, usuario.PasswordHash))
+            {
+                return Unauthorized("Credenciales inválidas");
+            }
+
+            var token = _jwtService.GenerateToken(usuario.Correo);
+
+            return Ok(new { token });
         }
     }
 }

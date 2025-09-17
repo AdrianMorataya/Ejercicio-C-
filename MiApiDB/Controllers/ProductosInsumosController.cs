@@ -44,7 +44,6 @@ namespace MiApiDB.Controllers
                 .FirstOrDefaultAsync(pi => pi.ProductoId == productoId && pi.InsumoId == insumoId);
             if (existing == null) return NotFound();
 
-            // actualizar los campos editable (ej: cantidad)
             existing.Cantidad = item.Cantidad;
 
             await _context.SaveChangesAsync();
