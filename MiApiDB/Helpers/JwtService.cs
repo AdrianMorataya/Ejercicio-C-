@@ -14,21 +14,21 @@ namespace MiApiDB.Helpers
             _config = config;
         }
 
-        public string GenerateToken(string correo)
+        public string GenerateToken(string correo, string rol)
         {
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, correo),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new Claim(ClaimTypes.Role, rol)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
-                claims: claims,
+                _config["Jwt:Issuer"],
+                _config["Jwt:Audience"],
+                claims,
                 expires: DateTime.Now.AddHours(2),
                 signingCredentials: creds
             );

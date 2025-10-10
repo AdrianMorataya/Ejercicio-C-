@@ -1,8 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MiApiDB.Data;
-using MiApiDB.Dtos;
-using MiApiDB.Models;
 using MiApiDB.Helpers;
+using MiApiDB.Models;
+using MiApiDB.Dtos;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace MiApiDB.Controllers
 {
@@ -11,57 +15,56 @@ namespace MiApiDB.Controllers
     public class UsuariosController : ControllerBase
     {
         private readonly AppDbContext _context;
-        private readonly JwtService _jwtService;
+        private readonly JwtService _jwt;
 
-        public UsuariosController(AppDbContext context, JwtService jwtService)
+        public UsuariosController(AppDbContext context, JwtService jwt)
         {
             _context = context;
-            _jwtService = jwtService;
+            _jwt = jwt;
         }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> Register(RegisterDto dto)
+        // 🔹 Login
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {
-            if (_context.Usuarios.Any(u => u.Correo == dto.Correo))
-            {
-                return BadRequest("El correo ya está en uso.");
-            }
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Correo == dto.Correo);
+            if (usuario == null)
+                return Unauthorized("Usuario o contraseña incorrecta");
 
-            string passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+            var passwordHasher = new PasswordHasher<Usuario>();
+            var result = passwordHasher.VerifyHashedPassword(usuario, usuario.PasswordHash, dto.Password);
 
-            var usuario = new Usuario
+            if (result == PasswordVerificationResult.Failed)
+                return Unauthorized("Usuario o contraseña incorrecta");
+
+            var token = _jwt.GenerateToken(usuario.Correo, usuario.Rol);
+            return Ok(new { token });
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterDto dto)
+        {
+            if (await _context.Usuarios.AnyAsync(u => u.Correo == dto.Correo))
+                return BadRequest(new { message = "El correo ya existe" });
+
+            var hasher = new PasswordHasher<Usuario>();
+
+            var nuevoUsuario = new Usuario
             {
-                ClienteId = dto.ClienteId,
                 Nombre = dto.Nombre,
                 Apellido = dto.Apellido,
                 Correo = dto.Correo,
-                PasswordHash = passwordHash
+                Rol = dto.Rol ?? "Empleado"
             };
 
-            _context.Usuarios.Add(usuario);
+            nuevoUsuario.PasswordHash = hasher.HashPassword(nuevoUsuario, dto.Password);
+
+            _context.Usuarios.Add(nuevoUsuario);
             await _context.SaveChangesAsync();
 
-            return Ok(new
-            {
-                usuario.UsuarioId,
-                usuario.Nombre,
-                usuario.Apellido,
-                usuario.Correo
-            });
-        }
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginDto dto)
-        {
-            var usuario = _context.Usuarios.SingleOrDefault(u => u.Correo == dto.Correo);
-
-            if (usuario == null || !BCrypt.Net.BCrypt.Verify(dto.Password, usuario.PasswordHash))
-            {
-                return Unauthorized("Credenciales inválidas");
-            }
-
-            var token = _jwtService.GenerateToken(usuario.Correo);
-
-            return Ok(new { token });
+            // Devuelve un objeto JSON
+            return Ok(new { message = "Usuario registrado correctamente", correo = nuevoUsuario.Correo });
         }
     }
 }

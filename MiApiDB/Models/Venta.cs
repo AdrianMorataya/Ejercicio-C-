@@ -11,9 +11,6 @@ namespace MiApiDB.Models
         [Column("venta_id")]
         public int VentaId { get; set; }
 
-        [Column("cliente_id")]
-        public int ClienteId { get; set; }
-
         [Column("usuario_id")]
         public int UsuarioId { get; set; }
 
@@ -28,5 +25,8 @@ namespace MiApiDB.Models
 
         [Column("metodo_pago")]
         public byte MetodoPago { get; set; }
+
+        [ForeignKey("ProductoId")]
+        public Producto Producto { get; set; } = null!;
     }
 }

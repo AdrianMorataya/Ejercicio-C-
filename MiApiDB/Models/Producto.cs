@@ -13,11 +13,17 @@ namespace MiApiDB.Models
         [Column("tipo_id")]
         public int TipoId { get; set; }
 
+        [Column("stock")]
+        public int Stock { get; set; }
+
         [Column("nombre")]
         [Required]
         public string Nombre { get; set; }
 
         [Column("precio")]
         public decimal Precio { get; set; }
+
+        [Column("activo")]
+        public bool Activo { get; set; } = true;
     }
 }

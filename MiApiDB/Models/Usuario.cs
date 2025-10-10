@@ -10,9 +10,6 @@ namespace MiApiDB.Models
         [Column("usuario_id")]
         public int UsuarioId { get; set; }
 
-        [Column("cliente_id")]
-        public int ClienteId { get; set; }
-
         [Column("nombre")]
         [Required]
         public string Nombre { get; set; }
@@ -28,5 +25,12 @@ namespace MiApiDB.Models
         [Column("password_hash")]
         [Required]
         public string PasswordHash { get; set; }
+
+        [NotMapped]
+        public bool IsAdmin { get; set; }
+
+        [Column("rol")]
+        [Required]
+        public string Rol { get; set; }
     }
 }

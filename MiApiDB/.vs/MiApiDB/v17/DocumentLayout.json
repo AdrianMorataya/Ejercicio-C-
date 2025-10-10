@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\controllers\\productosinsumoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:controllers\\productosinsumoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:controllers\\proveedorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\controllers\\productosinsumoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:controllers\\productosinsumoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -93,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\controllers\\categoriasinsumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:controllers\\categoriasinsumocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|c:\\users\\pc\\documents\\!ejemploc#\\ejercicio-c-\\miapidb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{125EAF35-A584-4C39-91BA-30C0F7F318AB}|MiApiDB.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,50 +106,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:38:08.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\LoginDto.cs",
-              "RelativeToolTip": "Dtos\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:28:50.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\RegisterDto.cs",
-              "RelativeToolTip": "Dtos\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T04:28:27.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Helpers\\JwtService.cs",
               "RelativeDocumentMoniker": "Helpers\\JwtService.cs",
@@ -162,20 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CategoriaInsumo.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\CategoriaInsumo.cs",
-              "RelativeDocumentMoniker": "Models\\CategoriaInsumo.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\CategoriaInsumo.cs",
-              "RelativeToolTip": "Models\\CategoriaInsumo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:36:51.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
@@ -183,12 +131,11 @@
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:34:27.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:34:27.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Insumo.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\Insumo.cs",
               "RelativeDocumentMoniker": "Models\\Insumo.cs",
@@ -196,12 +143,11 @@
               "RelativeToolTip": "Models\\Insumo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:37:02.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:37:02.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\Producto.cs",
               "RelativeDocumentMoniker": "Models\\Producto.cs",
@@ -209,12 +155,11 @@
               "RelativeToolTip": "Models\\Producto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:36:18.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:36:18.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ProductoInsumo.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\ProductoInsumo.cs",
               "RelativeDocumentMoniker": "Models\\ProductoInsumo.cs",
@@ -222,12 +167,11 @@
               "RelativeToolTip": "Models\\ProductoInsumo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:37:18.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:37:18.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\Proveedor.cs",
               "RelativeDocumentMoniker": "Models\\Proveedor.cs",
@@ -235,12 +179,11 @@
               "RelativeToolTip": "Models\\Proveedor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:36:38.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:36:38.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "TipoProducto.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\TipoProducto.cs",
               "RelativeDocumentMoniker": "Models\\TipoProducto.cs",
@@ -248,12 +191,11 @@
               "RelativeToolTip": "Models\\TipoProducto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:36:06.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:36:06.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
@@ -261,12 +203,11 @@
               "RelativeToolTip": "Models\\Usuario.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:35:48.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:35:48.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Venta.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\Venta.cs",
               "RelativeDocumentMoniker": "Models\\Venta.cs",
@@ -274,12 +215,11 @@
               "RelativeToolTip": "Models\\Venta.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:36:27.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:36:27.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -292,7 +232,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T20:38:08.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "VentasController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\VentasController.cs",
               "RelativeDocumentMoniker": "Controllers\\VentasController.cs",
@@ -300,51 +253,36 @@
               "RelativeToolTip": "Controllers\\VentasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:51:57.538Z",
+              "WhenOpened": "2025-09-10T20:51:57.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-10T20:41:24.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "CategoriaInsumo.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\CategoriaInsumo.cs",
+              "RelativeDocumentMoniker": "Models\\CategoriaInsumo.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Models\\CategoriaInsumo.cs",
+              "RelativeToolTip": "Models\\CategoriaInsumo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:51:12.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:36:51.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TipoProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\TipoProductoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TipoProductoController.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\TipoProductoController.cs",
-              "RelativeToolTip": "Controllers\\TipoProductoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:51:31.951Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProveedoresController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\ProveedoresController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProveedoresController.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\ProveedoresController.cs",
-              "RelativeToolTip": "Controllers\\ProveedoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:52:10.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 3,
               "Title": "ProductosInsumosController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\ProductosInsumosController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductosInsumosController.cs",
@@ -357,7 +295,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\RegisterDto.cs",
+              "RelativeToolTip": "Dtos\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T04:28:27.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Dtos\\LoginDto.cs",
+              "RelativeToolTip": "Dtos\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T04:28:50.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T20:51:12.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TipoProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\TipoProductoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TipoProductoController.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\TipoProductoController.cs",
+              "RelativeToolTip": "Controllers\\TipoProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T20:51:31.951Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 19,
+              "Title": "ProveedoresController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\ProveedoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProveedoresController.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\ProveedoresController.cs",
+              "RelativeToolTip": "Controllers\\ProveedoresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T20:52:10.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "ProductosController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\ProductosController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductosController.cs",
@@ -365,12 +363,11 @@
               "RelativeToolTip": "Controllers\\ProductosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:51:45.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:51:45.841Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "InsumosController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\InsumosController.cs",
               "RelativeDocumentMoniker": "Controllers\\InsumosController.cs",
@@ -378,12 +375,11 @@
               "RelativeToolTip": "Controllers\\InsumosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:52:22.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:52:22.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ClientesController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
@@ -391,12 +387,11 @@
               "RelativeToolTip": "Controllers\\ClientesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:38:32.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:38:32.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "CategoriasInsumoController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\Controllers\\CategoriasInsumoController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoriasInsumoController.cs",
@@ -404,21 +399,7 @@
               "RelativeToolTip": "Controllers\\CategoriasInsumoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T20:52:38.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\PC\\Documents\\!EjemploC#\\Ejercicio-C-\\MiApiDB\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-10T20:41:24.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T20:52:38.847Z"
             }
           ]
         }

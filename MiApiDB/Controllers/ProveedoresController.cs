@@ -17,28 +17,45 @@ namespace MiApiDB.Controllers
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Proveedor>>> Get() =>
-            await _context.Proveedores.ToListAsync();
+            await _context.Proveedores.Where(p => p.Activo).ToListAsync();
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Proveedor>> Get(int id)
         {
             var item = await _context.Proveedores.FindAsync(id);
-            return item == null ? NotFound() : item;
+            return item == null || !item.Activo ? NotFound() : item;
         }
 
         [HttpPost]
-        public async Task<ActionResult<Proveedor>> Post(Proveedor item)
+        public async Task<ActionResult<Proveedor>> Post(ProveedorCrearDTO dto)
         {
+            var item = new Proveedor
+            {
+                Nombre = dto.Nombre,
+                Contacto = dto.Contacto,
+                Telefono = dto.Telefono,
+                Direccion = dto.Direccion,
+                Activo = true
+            };
+
             _context.Proveedores.Add(item);
             await _context.SaveChangesAsync();
+
             return CreatedAtAction(nameof(Get), new { id = item.ProveedorId }, item);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, Proveedor item)
+        public async Task<IActionResult> Put(int id, ProveedorCrearDTO dto)
         {
-            if (id != item.ProveedorId) return BadRequest();
-            _context.Entry(item).State = EntityState.Modified;
+            var existing = await _context.Proveedores.FindAsync(id);
+            if (existing == null || !existing.Activo) return NotFound();
+
+            existing.Nombre = dto.Nombre;
+            existing.Contacto = dto.Contacto;
+            existing.Telefono = dto.Telefono;
+            existing.Direccion = dto.Direccion;
+
+            _context.Entry(existing).State = EntityState.Modified;
 
             try
             {
@@ -57,8 +74,12 @@ namespace MiApiDB.Controllers
         {
             var item = await _context.Proveedores.FindAsync(id);
             if (item == null) return NotFound();
-            _context.Proveedores.Remove(item);
+
+            // Eliminación lógica
+            item.Activo = false;
+            _context.Entry(item).State = EntityState.Modified;
             await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiApiDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e15866e2352faa228566f18a1a10d4b474f5ea33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1ed26bd7c1a6d8e68004ef8b8c72e39a1aa0c74")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiApiDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiApiDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

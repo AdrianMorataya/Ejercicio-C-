@@ -22,5 +22,8 @@ namespace MiApiDB.Models
 
         [Column("direccion")]
         public string Direccion { get; set; }
+        
+        [Column("activo")]
+        public bool Activo { get; set; } = true;
     }
 }

@@ -17,7 +17,7 @@ namespace MiApiDB.Controllers
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> Get() =>
-            await _context.Productos.ToListAsync();
+            await _context.Productos.Where(p => p.Activo).ToListAsync();
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Producto>> Get(int id)
@@ -27,10 +27,20 @@ namespace MiApiDB.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Producto>> Post(Producto item)
+        public async Task<ActionResult<Producto>> Post(ProductoCrearDTO dto)
         {
+            var item = new Producto
+            {
+                TipoId = dto.TipoId,
+                Nombre = dto.Nombre,
+                Precio = dto.Precio,
+                Stock = dto.Stock,
+                Activo = true  // lo seteamos por default
+            };
+
             _context.Productos.Add(item);
             await _context.SaveChangesAsync();
+
             return CreatedAtAction(nameof(Get), new { id = item.ProductoId }, item);
         }
 
@@ -57,8 +67,12 @@ namespace MiApiDB.Controllers
         {
             var item = await _context.Productos.FindAsync(id);
             if (item == null) return NotFound();
-            _context.Productos.Remove(item);
+
+            // Eliminación lógica
+            item.Activo = false;
+            _context.Entry(item).State = EntityState.Modified;
             await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }
